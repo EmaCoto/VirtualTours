@@ -2,7 +2,7 @@
 
 namespace App\Livewire\Post;
 
-use App\Models\post;
+use App\Models\PostFlayer;
 use Livewire\Component;
 use Livewire\WithFileUploads;
 
@@ -10,12 +10,12 @@ class CreatePost extends Component
 {
     use WithFileUploads;
 
-    public $open = true;
+    public $open = false;
     public $title, $description, $img;
     public $imgKey;
 
     public function save (){
-        $post = Post::create($this->only('title', 'description'));
+        $post = PostFlayer::create($this->only('title', 'description'));
 
         if($this->img){
             $post->img = $this->img->store('posts');
@@ -23,10 +23,15 @@ class CreatePost extends Component
         }
 
         $this->reset();
+        $this->reset('open');
+        $this->dispatch('render');
         $this->imgKey = rand();
     }
+
+
     public function render()
     {
+
         return view('livewire.post.create-post');
     }
 }

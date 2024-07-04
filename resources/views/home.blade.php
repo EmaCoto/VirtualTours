@@ -1,5 +1,5 @@
 <x-guest-layout>
-    <nav class="h-20 border-b shadow-lg sticky top-0 flex items-center bg-white justify-between px-14">
+    <nav class="h-20 border-b shadow-lg sticky top-0 flex items-center bg-white justify-between px-14 z-50">
         <a href="{{ route('home') }}" class="w-48"><img src="{{ asset("img/Logo_VitalTours_3.png") }}" alt="Logo"></a>
         <div>
             @if (Route::has('login'))
@@ -17,9 +17,11 @@
     {{-- HOME --}}
     <div>
         <div class="">
-            {{-- <img src="{{ asset('img/home_2.png') }}" alt="home"> --}}
-            <livewire:post.create-post>
-
+            <img src="{{ asset('img/home_2.png') }}" alt="home">
+            <div>
+                <h1 class="text-[#088395] text-center text-4xl font-bold">Tours en el área</h1>
+                <livewire:post.post>
+            </div>
         </div>
     </div>
 </x-guest-layout>
