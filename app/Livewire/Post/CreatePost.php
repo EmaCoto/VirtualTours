@@ -11,11 +11,11 @@ class CreatePost extends Component
     use WithFileUploads;
 
     public $open = false;
-    public $title, $description, $img;
+    public $title, $description, $duration, $prices, $img;
     public $imgKey;
 
     public function save (){
-        $post = PostFlayer::create($this->only('title', 'description'));
+        $post = PostFlayer::create($this->only('title', 'description', 'duration', 'prices'));
 
         if($this->img){
             $post->img = $this->img->store('posts');
@@ -24,7 +24,7 @@ class CreatePost extends Component
 
         $this->reset();
         $this->reset('open');
-        $this->dispatch('render');
+        $this->dispatch('render', );
         $this->imgKey = rand();
     }
 

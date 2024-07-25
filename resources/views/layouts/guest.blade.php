@@ -20,7 +20,7 @@
         <!-- Styles -->
         @livewireStyles
     </head>
-    <body id="contentEval" class="overflow-hidden">
+    <body class="overflow-hidden">
         <div class="font-sans text-gray-900 antialiased">
             {{ $slot }}
         </div>

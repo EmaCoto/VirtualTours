@@ -4,11 +4,11 @@
     </div>
     <ul class="flex p-4 overflow-x-auto">
         @foreach ($posts as $post)
-            <a href="#">
+            <a href="{{ route('content-tour') }}">
                 <li class="mx-3">
-                    <div class="relative group group overflow-hidden border-2 border-black shadow-lg text-gray-50 h-72 w-72 hover:-translate-y-3 hover:shadow-xl rounded-xl hover:duration-700 duration-700">
+                    <div class="relative group overflow-hidden border border-gray-800 shadow-lg text-gray-50 h-72 w-72 hover:-translate-y-3 hover:shadow-xl rounded-lg hover:duration-700 duration-700">
                         <div class="w-72 h-72">
-                            <img src="{{ asset('storage/' . $post->img) }}" alt="">
+                            <img src="{{ asset('storage/' . $post->img) }}" alt="" class="w-full h-full object-cover">
                         </div>
                         <div class="absolute bg-white bottom-0 w-72 px-3 py-1 flex flex-col">
                             <span class="text-[#088395] font-bold text-xs uppercase">Tour</span>
@@ -23,4 +23,3 @@
         @endforeach
     </ul>
 </div>
-

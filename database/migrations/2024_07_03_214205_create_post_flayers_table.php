@@ -14,7 +14,9 @@ return new class extends Migration
         Schema::create('post_flayers', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->string('description');
+            $table->text('description');
+            $table->integer('duration');
+            $table->string('prices');
             $table->string('img')->nullable();
             $table->timestamps();
         });

@@ -3,7 +3,7 @@
     <x-navbar />
 
     {{-- HOME --}}
-    <div>
+    <div id="contentEval" class="overflow-hidden h-screen">
         <div class="">
             <img src="{{ asset('img/home_2.png') }}" alt="home">
             <div>

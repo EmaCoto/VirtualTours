@@ -1,22 +1,19 @@
 <?php
 
-namespace App\Livewire\Post;
+namespace App\Livewire;
 
 use App\Models\PostFlayer;
-use Livewire\Attributes\On;
 use Livewire\Component;
 
-class Post extends Component
+class ContentTour extends Component
 {
     public $posts;
-
-    #[On('render')]
 
     public function mount(){
         $this->posts=PostFlayer::all();
     }
     public function render()
     {
-        return view('livewire.post.post');
+        return view('livewire.content-tour');
     }
 }
