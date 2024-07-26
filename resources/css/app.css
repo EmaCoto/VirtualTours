@@ -11,19 +11,19 @@
     background-position: center;
 }
 
-#contentEval{
+#contentScroll{
     overflow-y: scroll;
     scroll-margin: 20px;
+    height: 100vh;
 }
-#contentEval::-webkit-scrollbar{
-    background: none;
+#contentScroll::-webkit-scrollbar{
     width: 10px;
-    right: 10px;
+
 }
-#contentEval::-webkit-scrollbar-thumb {
+#contentScroll::-webkit-scrollbar-thumb {
     background: #088395;
     border-radius: 10px;
 }
-#contentEval::-webkit-scrollbar-track-piece{
-    margin: 20px 0;
+#contentScroll::-webkit-scrollbar-track-piece{
+    margin: 20px;
 }
