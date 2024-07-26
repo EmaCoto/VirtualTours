@@ -4,7 +4,7 @@
     </div>
     <ul class="flex p-4 overflow-x-auto">
         @foreach ($posts as $post)
-            <a href="{{ route('content-tour') }}">
+            <a href="{{ route('content-tour', ['postId' => $post->id]) }}">
                 <li class="mx-3">
                     <div class="relative group overflow-hidden border border-gray-800 shadow-lg text-gray-50 h-72 w-72 hover:-translate-y-3 hover:shadow-xl rounded-lg hover:duration-700 duration-700">
                         <div class="w-72 h-72">

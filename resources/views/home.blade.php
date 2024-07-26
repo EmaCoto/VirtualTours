@@ -3,7 +3,7 @@
     <x-navbar />
 
     {{-- HOME --}}
-    <div id="contentEval" class="overflow-hidden h-screen">
+    <div id="contentEval" class="overflow-hidden max-h-screen">
         <div class="">
             <img src="{{ asset('img/home_2.png') }}" alt="home">
             <div>
@@ -12,4 +12,5 @@
             </div>
         </div>
     </div>
+    
 </x-guest-layout>
