@@ -3,8 +3,11 @@
     <x-navbar />
 
     {{-- CONTENT --}}
-    <div  id="contentEval" class="overflow-hidden h-screen">
+    <div>
         @livewire('content-tour', ['postId' => $postId], key($postId))
     </div>
+
+    {{-- FOOTER --}}
+    <x-footer />
 
 </x-guest-layout>

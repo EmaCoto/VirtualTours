@@ -19,9 +19,9 @@ class PostFlayerFactory extends Factory
         return [
             'title' => $this->faker->sentence,
             'description' => $this->faker->paragraph,
-            'duration' => $this->faker->numberBetween(1, 10) . ' hours',
+            'duration' => $this->faker->numberBetween(1, 8),
             'prices' => $this->faker->paragraph,
-            'img' => $this->faker->imageUrl(640, 480, 'business') // Genera una URL de imagen de 640x480
+            'img' => 'parque_poblado.jpg', // Genera una URL de imagen de 640x480
         ];
     }
 }

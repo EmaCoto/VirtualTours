@@ -1,6 +1,6 @@
 <div>
     {{-- To attain knowledge, add things every day; To attain wisdom, subtract things every day. --}}
-    <button wire:click="$toggle('open')" class="bg-[#088395] rounded-lg px-6 py-1 text-white text-lg mx-2">crear</button>
+    <button wire:click="$toggle('open')" class="bg-[#088395] rounded-lg px-6 py-1 text-white text-lg mx-2">Crear</button>
 
     <x-dialog-modal maxWidth="5xl" wire:model='open'>
         <x-slot name='title'>
@@ -20,7 +20,7 @@
 
                 <div class="flex flex-col items-center">
                     <div class="w-[80%]">
-                        <label class="text-base font-bold uppercase">Título</label>
+                        <label class="text-base font-bold uppercase">título</label>
                         <x-input wire:model='title' type="text" class="w-full"/>
                     </div>
                     <div class="w-[80%] pt-4">
@@ -28,7 +28,7 @@
                         <textarea wire:model='description' name="description" id="contentEval" class="border-gray-300 focus:border-[#088395] focus:ring-[#088395] rounded-md shadow-sm w-full h-48 resize-none overflow-hidden"></textarea>
                     </div>
                     <div class="w-[80%] pt-4">
-                        <label class="text-base font-bold uppercase">Duracion del tours</label>
+                        <label class="text-base font-bold uppercase">duración del tours</label>
                         <x-input wire:model='duration' type="number" class="w-full"/>
                     </div>
                     <div class="w-[80%] pt-4">

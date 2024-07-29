@@ -24,7 +24,7 @@ class CreatePost extends Component
 
         $this->reset();
         $this->reset('open');
-        $this->dispatch('render', );
+        $this->dispatch('render');
         $this->imgKey = rand();
     }
 

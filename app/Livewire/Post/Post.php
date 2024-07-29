@@ -15,6 +15,9 @@ class Post extends Component
     public function mount(){
         $this->posts=PostFlayer::all();
     }
+    public function randomColor(){
+        $this->dispatch('generateRandomColor');
+    }
     public function render()
     {
         return view('livewire.post.post');
