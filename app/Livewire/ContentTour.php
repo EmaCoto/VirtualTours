@@ -29,7 +29,15 @@ class ContentTour extends Component
         return $colors[array_rand($colors)];
     }
 
+    public function destroy($postId){
+        $post = PostFlayer::find($postId);
+         if ($post) {
+            $post->delete();
+        }
+        return redirect()->to('/');
+    }
 
+    #[On('render')]
     public function render()
     {
         return view('livewire.content-tour');

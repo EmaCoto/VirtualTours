@@ -8,7 +8,7 @@
         </x-slot>
         <x-slot name='content'>
             <form class="mx-auto grid grid-cols-2 overflow-hidden">
-                <div class="h-full flex flex-col items-center justify-center">
+                <div class="h-full flex flex-col items-center">
                     @if ($img)
                         <img src="{{ $img->temporaryUrl() }}" alt="Flayer" class="w-[80%] h-[75%] justify-normal rounded-lg">
 
