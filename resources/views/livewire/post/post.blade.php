@@ -3,11 +3,11 @@
         <livewire:post.create-post>
     </div>
     <div class="relative">
-        <button class="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-gray-800 text-white p-2 rounded-full" id="left-arrow">
-            &#9664;
+        <button class="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-black bg-opacity-0 text-white text-3xl p-2 rounded-r-full h-3/4 w-8 hover:bg-opacity-80 duration-700 ease-in-out" id="left-arrow">
+            <i class="fa-solid fa-angle-left"></i>
         </button>
-        <button class="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-gray-800 text-white p-2 rounded-full" id="right-arrow">
-            &#9654;
+        <button class="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-black bg-opacity-0 text-white text-3xl p-2 rounded-l-full h-3/4 w-8 hover:bg-opacity-80 duration-700 ease-in-out" id="right-arrow">
+            <i class="fa-solid fa-angle-right"></i>
         </button>
         <ul class="flex p-4 overflow-x-hidden " id="posts-container">
             {{-- VIEW POST --}}

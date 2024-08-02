@@ -27,27 +27,4 @@
 
         @livewireScripts
     </body>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const container = document.getElementById('posts-container');
-            const leftArrow = document.getElementById('left-arrow');
-            const rightArrow = document.getElementById('right-arrow');
-
-            leftArrow.addEventListener('click', function () {
-                container.scrollBy({
-                    left: -300, // Ajusta este valor según sea necesario
-                    behavior: 'smooth'
-                });
-            });
-
-            rightArrow.addEventListener('click', function () {
-                container.scrollBy({
-                    left: 300, // Ajusta este valor según sea necesario
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
-
 </html>
