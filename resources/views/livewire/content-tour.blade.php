@@ -1,4 +1,9 @@
 <div>
+    {{-- NAVBAR --}}
+    <x-navbar />
+
+
+    {{-- INFO TOUR--}}
     @if($post)
         <div class="flex justify-end">
             {{-- EDIT POST --}}
@@ -41,7 +46,7 @@
                     <p>{!! nl2br(e($post->prices)) !!}</p>
                 </div>
                 <div class="w-full mt-4 text-center ">
-                    <a href="#">
+                    <a href="{{ route('reservation-form', ['postId' => $post->id]) }}">
                         <button class="cursor-pointer font-semibold overflow-hidden relative z-100 border-2 border-[#088395] group px-8 py-2 rounded-lg">
                             <span class="relative z-10 text-[#088395] group-hover:text-white duration-500 uppercase">reservar</span>
                             <span class="absolute w-full h-full bg-[#088395] -left-32 top-0 -rotate-45 group-hover:rotate-0 group-hover:left-0 duration-500"></span>
@@ -51,10 +56,17 @@
                 </div>
             </div>
         </section>
-        
-
     @else
         <p>Tour no encontrado.</p>
     @endif
+
+    {{-- THE OTHER POSTS --}}
+    <div class="mt-8">
+        <h1 class="text-[#088395] text-center text-4xl font-bold">Resultados similares</h1>
+        <livewire:post.post>
+    </div>
+
+    {{-- FOOTER --}}
+    <x-footer />
 
 </div>

@@ -4,13 +4,13 @@
 
     <x-dialog-modal maxWidth="5xl" wire:model='open'>
         <x-slot name='title'>
-            <h1 class="bg-[#088395] w-[20%] text-white text-2xl p-2 pl-6 rounded-r-full">Crear flayer</h1>
+            <h1 class="bg-[#088395] w-[20%] text-white text-2xl p-2 pl-6 rounded-r-full">Crear flyer</h1>
         </x-slot>
         <x-slot name='content'>
             <form class="mx-auto grid grid-cols-2 overflow-hidden">
                 <div class="h-full flex flex-col items-center">
                     @if ($img)
-                        <img src="{{ $img->temporaryUrl() }}" alt="Flayer" class="w-[80%] h-[75%] justify-normal rounded-lg">
+                        <img src="{{ $img->temporaryUrl() }}" alt="Flyer" class="w-[80%] h-[75%] justify-normal rounded-lg">
 
                         @else
                         <x-label for="img" class="border-dashed border-2 p-10 w-[80%] h-[75%] hover:cursor-pointer flex flex-col text-center justify-center uppercase rounded-lg overflow-hidden"><i class="fa-solid fa-file-arrow-down text-6xl m-10"></i>sube una imagen</x-label>

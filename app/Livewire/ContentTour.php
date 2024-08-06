@@ -40,7 +40,9 @@ class ContentTour extends Component
     #[On('render')]
     public function render()
     {
-        return view('livewire.content-tour');
+        return view('livewire.content-tour', [
+            'postId' => $this->postId,
+        ]);
     }
 }
 
