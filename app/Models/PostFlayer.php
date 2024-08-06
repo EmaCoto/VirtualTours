@@ -10,4 +10,9 @@ class PostFlayer extends Model
     use HasFactory;
 
     protected $fillable = ['title', 'description','duration','prices', 'img'];
+
+    public function reservationForms()
+    {
+        return $this->hasMany(ReservationForm::class);
+    }
 }

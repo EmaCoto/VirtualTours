@@ -4,7 +4,9 @@
 
     {{-- RESERVATION FORM --}}
     <div>
-        <h1>Reservar tour a {{ $post->title }}</h1>
+        <h1>Tour a reservar: {{ $post->title }}</h1>
+
+        
 
     </div>
 
