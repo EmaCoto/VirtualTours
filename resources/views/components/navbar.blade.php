@@ -1,5 +1,5 @@
-<nav class="h-20 border-b shadow-lg sticky top-0 flex items-center bg-white justify-between px-14 z-50">
-    <a href="{{ route('home') }}" class="w-48"><img src="{{ asset("img/Logo_VitalTours.png") }}" alt="Logo"></a>
+<nav class="hidden md:flex h-20 border-b shadow-lg sticky top-0 items-center bg-white justify-between md:px-8 lg:px-14 z-50">
+    <a href="{{ route('home') }}" class="md:w-[20%] lg:w-[17%]"><img src="{{ asset("img/Logo_VitalTours.png") }}" alt="Logo"></a>
 
     <div class="flex">
         <div class="flex items-center ">

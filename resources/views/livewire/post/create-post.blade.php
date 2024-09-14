@@ -1,13 +1,13 @@
 <div>
     {{-- To attain knowledge, add things every day; To attain wisdom, subtract things every day. --}}
-    <button wire:click="$toggle('open')" class="bg-[#088395] rounded-lg px-6 py-1 text-white text-lg mx-2">Crear</button>
+    <button wire:click="$toggle('open')" class="bg-[#088395] rounded-lg px-3 md:px-6 py-1  text-white text-base md:text-lg mx-2">Crear</button>
 
     <x-dialog-modal maxWidth="5xl" wire:model='open'>
         <x-slot name='title'>
-            <h1 class="bg-[#088395] w-[20%] text-white text-2xl p-2 pl-6 rounded-r-full">Crear flyer</h1>
+            <h1 class="bg-[#088395] w-[50%] md:w-[20%] text-white text-xl md:text-2xl p-2 pl-6 rounded-r-full">Crear flyer</h1>
         </x-slot>
         <x-slot name='content'>
-            <form class="mx-auto grid grid-cols-2 overflow-hidden">
+            <form class="mx-auto md:grid grid-cols-2 overflow-hidden">
                 <div class="h-full flex flex-col items-center">
                     @if ($img)
                         <img src="{{ $img->temporaryUrl() }}" alt="Flyer" class="w-[80%] h-[75%] justify-normal rounded-lg">
